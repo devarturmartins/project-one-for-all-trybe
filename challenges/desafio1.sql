@@ -50,7 +50,7 @@ CREATE TABLE cancoes(
 ) engine = InnoDB;
 
 CREATE TABLE duracao(
-	duracao_segundos VARCHAR(6) NOT NULL,
+	duracao_segundos DECIMAL(5,2) NOT NULL,
     id_cancao INT NOT NULL,
     FOREIGN KEY (id_cancao) REFERENCES cancoes(id_cancao)
 ) engine = InnoDB;
